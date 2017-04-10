@@ -6,11 +6,11 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/13 16:09:43 by gduron            #+#    #+#             */
-/*   Updated: 2017/03/13 16:13:17 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/10 19:05:23 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strlowcase(char *str)
+char	*ft_tolower(char *str)
 {
 	int i;
 
