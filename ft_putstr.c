@@ -6,13 +6,11 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/09 10:30:06 by gduron            #+#    #+#             */
-/*   Updated: 2017/03/09 21:36:17 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/10 20:31:10 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
-
-void	ft_putstr(char *str)
+void	ft_putstr(char const *str)
 {
 	while (*str)
 		ft_putchar(*str++);

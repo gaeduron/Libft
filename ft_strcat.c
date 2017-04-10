@@ -6,25 +6,25 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/13 21:13:25 by gduron            #+#    #+#             */
-/*   Updated: 2017/03/14 09:27:53 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/10 20:33:40 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *src)
+char	*ft_strcat(char *restrict s1, const char *restrict s2)
 {
 	int i;
 	int j;
 
 	i = 0;
 	j = 0;
-	while (dest[i])
+	while (s1[i])
 		i++;
-	while (src[j])
+	while (s2[j])
 	{
-		dest[i] = src[j];
+		s1[i] = s2[j];
 		i++;
 		j++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	s1[i] = '\0';
+	return (s1);
 }

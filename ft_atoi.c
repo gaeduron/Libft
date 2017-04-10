@@ -6,11 +6,11 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/09 10:46:30 by gduron            #+#    #+#             */
-/*   Updated: 2017/03/09 21:33:32 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/10 19:11:26 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		is_space(char c)
+static int		is_space(char c)
 {
 	if (c == ' ' || c == '\t' || c == '\n')
 		return (1);
@@ -19,7 +19,7 @@ int		is_space(char c)
 	return (0);
 }
 
-int		ft_atoi(char *str)
+int				ft_atoi(char *str)
 {
 	int nbr;
 	int pos;

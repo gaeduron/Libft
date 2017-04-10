@@ -6,23 +6,18 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/13 19:14:18 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/10 19:00:18 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/10 19:44:35 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-static int		is_numeric(char c)
+static int		is_numeric(int c)
 {
 	return ((c >= '0' && c <= '9') ? 1 : 0);
 }
 
-int				ft_isdigit(char *str)
+int				ft_isdigit(int c)
 {
-	if (!*str)
-		return (1);
-	while (*str)
-	{
-		if (!is_numeric(*str++))
-			return (0);
-	}
+	if (!is_numeric(c))
+		return (0);
 	return (1);
 }

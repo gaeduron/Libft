@@ -6,9 +6,11 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/13 14:49:00 by gduron            #+#    #+#             */
-/*   Updated: 2017/03/16 13:17:22 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/10 19:35:46 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int		ft_strncmp(char *s1, char *s2, unsigned int n)
 {

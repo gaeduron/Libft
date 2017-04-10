@@ -6,16 +6,16 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/09 10:34:14 by gduron            #+#    #+#             */
-/*   Updated: 2017/03/14 11:57:14 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/10 20:02:52 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strlen(char *str)
+size_t	ft_strlen(const char *s)
 {
-	int i;
+	size_t i;
 
 	i = 0;
-	while (*str++)
+	while (str[i])
 		i++;
 	return (i);
 }
