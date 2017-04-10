@@ -6,16 +6,16 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/13 20:46:38 by gduron            #+#    #+#             */
-/*   Updated: 2017/03/13 20:56:47 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/10 19:03:53 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		is_printable(char c)
+static int		is_printable(char c)
 {
 	return (!((c >= 0 && c <= 31) || c == 127) ? 1 : 0);
 }
 
-int		ft_str_is_printable(char *str)
+int				ft_isprint(char *str)
 {
 	if (!*str)
 		return (1);
