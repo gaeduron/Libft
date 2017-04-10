@@ -6,7 +6,7 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/12 18:04:57 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/10 16:55:47 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/10 20:48:25 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,46 @@
 int main()
 {
 	printf("______________________ PART 1 ______________________\n");
+
+
 	printf("\n________str* group________\n");
+
+	printf("ft_strlen :\n");
+
+	printf("ft_strcmp :\n");
+
+	printf("ft_strncmp :\n");
+
+	printf("ft_strdup :\n");
+
+	printf("ft_strstr :\n");
+
+	printf("ft_strcat :\n");
+
+	printf("ft_strncat :\n");
+
+
 	printf("\n________is* group________\n");
+	
+	printf("ft_isalpha :\n");
+
+	printf("ft_isdigit :\n");
+
+	printf("ft_isprint :\n");
+
+
 	printf("\n________to* group________\n");
+
+	printf("ft_tolower :\n");
+
+	printf("ft_toupper :\n");
+
+
 	printf("\n________mem* group________\n");
+
+
 	printf("\n________others________\n");
+
 
 	printf("\n______________________ PART 2 ______________________\n");
 	printf("\n________str* group________\n");
