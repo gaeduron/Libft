@@ -6,16 +6,16 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/13 17:43:43 by gduron            #+#    #+#             */
-/*   Updated: 2017/03/13 19:21:45 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/10 18:57:01 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		is_alpha(char c)
+static int		is_alpha(char c)
 {
 	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') ? 1 : 0);
 }
 
-int		ft_str_is_alpha(char *str)
+int		ft_isalpha(char *str)
 {
 	if (!*str)
 		return (1);
