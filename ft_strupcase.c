@@ -1,21 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strupcase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/13 14:20:01 by gduron            #+#    #+#             */
-/*   Updated: 2017/03/16 13:18:40 by gduron           ###   ########.fr       */
+/*   Created: 2017/03/13 15:45:27 by gduron            #+#    #+#             */
+/*   Updated: 2017/03/13 16:06:23 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strcmp(char *s1, char *s2)
+char	*ft_strupcase(char *str)
 {
-	while ((*s1 && *s2) && *s1 == *s2)
+	int i;
+
+	i = 0;
+	while (str[i])
 	{
-		s1++;
-		s2++;
+		if (str[i] >= 'a' && str[i] <= 'z')
+			str[i] -= 'a' - 'A';
+		i++;
 	}
-	return (*(unsigned char *)s1 - *(unsigned char *)s2);
+	return (str);
 }

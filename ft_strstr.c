@@ -1,21 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/13 14:20:01 by gduron            #+#    #+#             */
-/*   Updated: 2017/03/16 13:18:40 by gduron           ###   ########.fr       */
+/*   Created: 2017/03/13 11:22:05 by gduron            #+#    #+#             */
+/*   Updated: 2017/03/16 15:48:46 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strcmp(char *s1, char *s2)
+char	*ft_strstr(char *str, char *to_find)
 {
-	while ((*s1 && *s2) && *s1 == *s2)
+	int i;
+
+	i = 0;
+	if (!to_find[i])
+		return (str);
+	while (*str)
 	{
-		s1++;
-		s2++;
+		i = 0;
+		while (to_find[i] == str[i] && to_find[i] && str[i])
+		{
+			if (to_find[i + 1] == '\0')
+				return (str);
+			i++;
+		}
+		str++;
 	}
-	return (*(unsigned char *)s1 - *(unsigned char *)s2);
+	return (0);
 }

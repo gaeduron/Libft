@@ -1,21 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/13 14:20:01 by gduron            #+#    #+#             */
-/*   Updated: 2017/03/16 13:18:40 by gduron           ###   ########.fr       */
+/*   Created: 2017/03/14 09:21:24 by gduron            #+#    #+#             */
+/*   Updated: 2017/03/14 09:29:34 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strcmp(char *s1, char *s2)
+char	*ft_strncat(char *dest, char *src, int nb)
 {
-	while ((*s1 && *s2) && *s1 == *s2)
+	int i;
+	int j;
+
+	i = 0;
+	j = 0;
+	if (!nb)
+		return (dest);
+	while (dest[i])
+		i++;
+	while (src[j] && nb--)
 	{
-		s1++;
-		s2++;
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
-	return (*(unsigned char *)s1 - *(unsigned char *)s2);
+	dest[i] = '\0';
+	return (dest);
 }

@@ -1,21 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/13 14:20:01 by gduron            #+#    #+#             */
-/*   Updated: 2017/03/16 13:18:40 by gduron           ###   ########.fr       */
+/*   Created: 2017/03/08 13:25:06 by gduron            #+#    #+#             */
+/*   Updated: 2017/03/09 12:05:47 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strcmp(char *s1, char *s2)
+void	ft_putchar(char c);
+
+void	ft_putnbr(int nb)
 {
-	while ((*s1 && *s2) && *s1 == *s2)
+	if (nb < 0)
 	{
-		s1++;
-		s2++;
+		ft_putchar('-');
+		if (nb == -2147483648)
+		{
+			ft_putchar('2');
+			nb = nb + 2000000000;
+		}
+		nb = nb * -1;
 	}
-	return (*(unsigned char *)s1 - *(unsigned char *)s2);
+	if (nb / 10)
+		ft_putnbr(nb / 10);
+	ft_putchar((nb % 10) + '0');
 }
