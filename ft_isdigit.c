@@ -6,16 +6,16 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/13 19:14:18 by gduron            #+#    #+#             */
-/*   Updated: 2017/03/13 19:27:39 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/10 19:00:18 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		is_numeric(char c)
+static int		is_numeric(char c)
 {
 	return ((c >= '0' && c <= '9') ? 1 : 0);
 }
 
-int		ft_str_is_numeric(char *str)
+int				ft_isdigit(char *str)
 {
 	if (!*str)
 		return (1);
