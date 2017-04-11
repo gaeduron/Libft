@@ -6,9 +6,11 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/14 09:21:24 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/10 20:34:46 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/11 14:52:36 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n)
 {

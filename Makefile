@@ -18,18 +18,18 @@ ft_putstr.c \
 ft_swap.c \
 ft_strcmp.c \
 ft_strlen.c \
-#ft_strncmp.c \
+ft_strncmp.c \
 ft_strlen.c \
 ft_strdup.c \
-ft_strcpy.c \
-ft_strncpy.c \
+ft_strstr.c \
 ft_strcat.c \
 ft_strncat.c \
+#ft_strnstr.c \
+ft_strcpy.c \
+ft_strncpy.c \
 ft_strlcat.c \
 ft_strchr.c \
 ft_strrchr.c \
-ft_strstr.c \
-ft_strnstr.c \
 
 
 CC = -Wall -Werror -Wextra
@@ -53,7 +53,7 @@ clean:
 	@rm -f *.o
 
 fclean: clean
-	@echo "Deleting:\033[33m $(NAME)"
+	@echo "Deleting:\033[33m $(NAME)\033[0m"
 	@rm -f $(NAME)
 
 re: fclean all
