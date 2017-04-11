@@ -6,7 +6,7 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 16:11:02 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/10 20:35:37 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/11 17:26:38 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ char	*ft_strdup(const char *s1);
 char	*ft_strstr(const char *big, const char *little);
 char	*ft_strcat(char *restrict s1, const char *restrict s2);
 char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n);
+size_t	ft_strlcat(char *restrict dst, const char *restrict src,\
+		size_t size);
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
