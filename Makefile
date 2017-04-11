@@ -30,6 +30,11 @@ ft_strncpy.c \
 ft_strnstr.c \
 ft_strchr.c \
 ft_strrchr.c \
+ft_isalpha.c \
+ft_isdigit.c \
+ft_isprint.c \
+ft_isalnum.c \
+ft_isascii.c 
 
 CC = -Wall -Werror -Wextra
 

@@ -6,7 +6,7 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 16:11:02 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/11 19:55:28 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/11 20:38:16 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,8 @@ size_t	ft_strlcat(char *restrict dst, const char *restrict src,\
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
+int     ft_isalnum(int c);
+int     ft_isascii(int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 
