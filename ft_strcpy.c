@@ -6,11 +6,11 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/12 20:01:24 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/11 18:23:50 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/12 16:56:37 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char    *ft_strcpy(char *dst, const char *src)
+char	*ft_strcpy(char *dst, const char *src)
 {
 	int i;
 

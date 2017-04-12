@@ -6,13 +6,13 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 15:40:28 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/12 16:35:45 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/12 16:54:09 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int     ft_memcmp(const void *s1, const void *s2, size_t n)
+int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	if (n == 0)
 		return (0);

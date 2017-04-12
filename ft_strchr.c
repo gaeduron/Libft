@@ -6,11 +6,11 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 19:26:29 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/11 19:41:09 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/12 16:55:59 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char    *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	while (*s)
 	{
