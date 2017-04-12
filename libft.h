@@ -6,7 +6,7 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 16:11:02 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/12 17:49:01 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/12 18:49:00 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <string.h>
 # include <stdlib.h>
+# include <unistd.h>
 
 void	ft_putchar(char c);
 void	ft_putstr(char const *s);
