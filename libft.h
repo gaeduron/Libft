@@ -6,7 +6,7 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 16:11:02 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/12 17:02:20 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/12 17:12:56 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 void	ft_putchar(char c);
 void	ft_putstr(char const *s);
 void	ft_putnbr(int nb);
+void	ft_putendl(char const *s);
 
 int		ft_strcmp(const char *s1, const char *s2);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
