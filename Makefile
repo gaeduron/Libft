@@ -46,6 +46,15 @@ ft_memccpy.c \
 ft_memmove.c \
 ft_memchr.c \
 ft_memcmp.c \
+ft_putendl \
+ft_putchar_fd \
+ft_putstr_fd \
+ft_putendl_fd \
+ft_putnbr_fd \
+ft_memalloc \
+ft_memdel \
+ft_strnew \
+ft_strdel \
 
 
 CC = -Wall -Werror -Wextra
