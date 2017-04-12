@@ -6,7 +6,7 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 16:11:02 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/12 10:03:21 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/12 10:48:16 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,14 @@ int     ft_isalnum(int c);
 int     ft_isascii(int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+
+void    *ft_memset(void *b, int c, size_t len);
+void	ft_bzero(void *s, size_t n);
+void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n);
+void	*ft_memccpy(void *restrict dst, const void *restrict src, int c, size_t n);
+void	*ft_memmove(void *dst, const void *src, size_t len);
+void	*ft_memchr(const void *s, int c, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
 int     ft_atoi(const char *str);
 void	ft_swap(int *a, int *b);
