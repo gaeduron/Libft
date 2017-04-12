@@ -37,7 +37,8 @@ ft_isalnum.c \
 ft_isascii.c \
 ft_tolower.c \
 ft_toupper.c \
-ft_itoa.c
+ft_itoa.c \
+ft_atoi.c
 
 CC = -Wall -Werror -Wextra
 
