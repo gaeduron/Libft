@@ -6,7 +6,7 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/13 09:25:11 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/13 09:27:26 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/13 11:54:55 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,15 @@
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char *new;
+	long	i;
 
+	i = 0;
 	if (!(new = ft_strdup(s)))
 		return (0);
-	ft_striteri(new, (void*)f);
+	while (new[i])
+	{
+		new[i] = f(i, s[i]);
+		i++;
+	}
 	return (new);
 }

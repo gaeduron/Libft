@@ -6,7 +6,7 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/13 09:18:02 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/13 09:23:48 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/13 11:51:46 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,16 @@
 
 char	*ft_strmap(char const *s, char (*f)(char))
 {
-	char *new;
+	char	*new;
+	long	i;
 
+	i = 0;
 	if (!(new = ft_strdup(s)))
 		return (0);
-	ft_striter(new, (void*)f);
+	while (new[i])
+	{
+		new[i] = f(s[i]);
+		i++;
+	}
 	return (new);
 }

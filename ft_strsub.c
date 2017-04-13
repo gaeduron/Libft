@@ -6,7 +6,7 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/13 09:41:05 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/13 09:52:13 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/13 11:06:01 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 		return (0);
 	while (i < (unsigned int)len + start)
 	{
-		dup[i] = s[i];
+		dup[i - start] = s[i];
 		i++;
 	}
-	dup[i] = '\0';
+	dup[i - start] = '\0';
 	return (dup);
 }
