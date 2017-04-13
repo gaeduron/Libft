@@ -1,29 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/13 09:25:11 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/13 16:11:27 by gduron           ###   ########.fr       */
+/*   Created: 2017/03/26 10:10:14 by gduron            #+#    #+#             */
+/*   Updated: 2017/04/13 13:14:48 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*new;
-	long	i;
+	int		total_len;
+	char	*tmp;
+	int		i;
 
 	i = 0;
-	if (!(new = ft_strdup(s)))
+	total_len = ft_strlen(s1) + ft_strlen(s2);
+	if ((tmp = (char *)malloc(sizeof(char) * (total_len + 1))) == NULL)
 		return (0);
-	while (new[i])
+	tmp[total_len] = '\0';
+	while (s1[i])
 	{
-		new[i] = f(i, s[i]);
+		tmp[i] = s1[i];
 		i++;
 	}
-	return (new);
+	while (*s2)
+		tmp[i++] = *s2++;
+	return (tmp);
 }
