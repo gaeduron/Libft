@@ -15,6 +15,7 @@ NAME = libft.a
 SRC = \
 ft_putchar.c \
 ft_putstr.c \
+ft_putnbr.c \
 ft_swap.c \
 ft_strcmp.c \
 ft_strlen.c \
