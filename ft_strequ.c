@@ -1,32 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memcpy.c                                           :+:      :+:    :+:   */
+/*   ft_strequ.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/12 11:24:31 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/13 10:31:19 by gduron           ###   ########.fr       */
+/*   Created: 2017/04/13 09:28:45 by gduron            #+#    #+#             */
+/*   Updated: 2017/04/13 09:32:29 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
+int		ft_strequ(char const *s1, char const *s2)
 {
-	unsigned char	*dst_tmp;
-	unsigned char	*src_tmp;
-	size_t			i;
-
-	dst_tmp = (unsigned char*)dst;
-	src_tmp = (unsigned char*)src;
-	i = 0;
-	while (i < n)
-	{
-		dst_tmp[i] = src_tmp[i];
-		i++;
-		if (src_tmp[i - 1] == (unsigned char)c)
-			return (&dst[i]);
-	}
-	return (0);
+	return (ft_strcmp(s1, s2) ? 0 : 1);
 }

@@ -1,32 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memcpy.c                                           :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/12 11:24:31 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/13 10:31:19 by gduron           ###   ########.fr       */
+/*   Created: 2017/04/13 09:25:11 by gduron            #+#    #+#             */
+/*   Updated: 2017/04/13 09:27:26 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	unsigned char	*dst_tmp;
-	unsigned char	*src_tmp;
-	size_t			i;
+	char *new;
 
-	dst_tmp = (unsigned char*)dst;
-	src_tmp = (unsigned char*)src;
-	i = 0;
-	while (i < n)
-	{
-		dst_tmp[i] = src_tmp[i];
-		i++;
-		if (src_tmp[i - 1] == (unsigned char)c)
-			return (&dst[i]);
-	}
-	return (0);
+	if (!(new = ft_strdup(s)))
+		return (0);
+	ft_striteri(new, (void*)f);
+	return (new);
 }
