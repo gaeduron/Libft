@@ -74,6 +74,8 @@ ft_lstadd.c \
 ft_lstiter.c \
 ft_lst_push_back.c \
 ft_lstmap.c \
+ft_lst_at.c \
+ft_lst_size.c \
 ft_sqrt.c \
 ft_pow.c \
 
