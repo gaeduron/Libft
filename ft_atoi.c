@@ -6,7 +6,7 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/09 10:46:30 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/12 10:02:51 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/14 09:49:18 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ static int		is_space(char c)
 
 int				ft_atoi(const char *str)
 {
-	int nbr;
-	int pos;
+	long	nbr;
+	int		pos;
 
 	pos = 1;
 	nbr = 0;
@@ -43,5 +43,5 @@ int				ft_atoi(const char *str)
 		str++;
 	}
 	nbr = nbr * pos;
-	return (nbr);
+	return ((int)nbr);
 }

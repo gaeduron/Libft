@@ -1,26 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstmap.c                                        :+:      :+:    :+:   */
+/*   ft_list_push_back.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/13 18:35:09 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/14 09:32:20 by gduron           ###   ########.fr       */
+/*   Created: 2017/03/20 10:38:59 by gduron            #+#    #+#             */
+/*   Updated: 2017/04/14 09:28:51 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
+void	ft_lst_push_back(t_list **begin_list, t_list *new)
 {
-	t_list	*new;
+	t_list	*last;
 
-	new = 0;
-	while (lst)
+	last = (*begin_list);
+	if (last == 0)
 	{
-		ft_lst_push_back(&new, f(lst));
-		lst = lst->next;
+		*begin_list = new;
+		return ;
 	}
-	return (new);
+	while (last->next)
+		last = last->next;
+	last->next = new;
 }
