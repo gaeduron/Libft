@@ -6,11 +6,16 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/13 14:38:00 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/13 15:40:37 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/14 18:54:07 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static int				ft_is_space(int c)
+{
+	return ((c == '\n' || c == '\t' || c == ' ') ? 1 : 0);
+}
 
 static unsigned long	find_end(char const *s)
 {
@@ -19,7 +24,7 @@ static unsigned long	find_end(char const *s)
 	if (ft_strlen(s) == 0)
 		return (0);
 	last_char = ft_strlen(s) - 1;
-	while (ft_isspace(s[last_char]))
+	while (ft_is_space(s[last_char]))
 	{
 		if (last_char == 0)
 			return (last_char + 1);
@@ -36,7 +41,7 @@ char					*ft_strtrim(char const *s)
 
 	start = 0;
 	end = find_end(s);
-	while (ft_isspace(s[start]) && s[start])
+	while (ft_is_space(s[start]) && s[start])
 		start++;
 	if (s[start] == 0)
 		return (ft_strnew(1));
