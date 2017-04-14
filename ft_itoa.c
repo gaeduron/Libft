@@ -6,11 +6,11 @@
 /*   By: exam <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/24 19:24:06 by exam              #+#    #+#             */
-/*   Updated: 2017/04/13 16:13:55 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/14 12:00:26 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 static char		*str_intmin(char *str)
 {
