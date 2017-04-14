@@ -16,7 +16,6 @@ SRC = \
 ft_putchar.c \
 ft_putstr.c \
 ft_putnbr.c \
-ft_swap.c \
 ft_strcmp.c \
 ft_strlen.c \
 ft_strncmp.c \
@@ -75,6 +74,8 @@ ft_lstadd.c \
 ft_lstiter.c \
 ft_lst_push_back.c \
 ft_lstmap.c \
+ft_sqrt.c \
+ft_pow.c \
 
 CC = -Wall -Werror -Wextra
 

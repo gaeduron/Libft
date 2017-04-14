@@ -1,21 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_pow.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/09 08:58:04 by gduron            #+#    #+#             */
-/*   Updated: 2017/03/09 09:06:01 by gduron           ###   ########.fr       */
+/*   Created: 2017/04/14 11:04:49 by gduron            #+#    #+#             */
+/*   Updated: 2017/04/14 11:48:41 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_swap(int *a, int *b)
-{
-	int c;
+#include "libft.h"
 
-	c = 0;
-	c = *b;
-	*b = *a;
-	*a = c;
+long long	ft_pow(int nb, int pow)
+{
+	long long	res;
+
+	res = 1;
+	if (pow == 0)
+		return (1);
+	if (pow < 0)
+		return (0);
+	while (pow--)
+		res *= nb;
+	return (res);
 }
