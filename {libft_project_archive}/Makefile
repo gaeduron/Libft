@@ -83,9 +83,9 @@ CC = -Wall -Werror -Wextra
 
 OBJ = $(SRC:.c=.o)
 
-HEADER = includes
+HEADER = .
 
-VPATH = ./srcs
+VPATH = .
 
 all: $(NAME)
 
