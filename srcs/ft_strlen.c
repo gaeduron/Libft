@@ -6,7 +6,7 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/09 10:34:14 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/11 10:27:08 by gduron           ###   ########.fr       */
+/*   Updated: 2017/05/23 12:06:51 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 size_t	ft_strlen(const char *s)
 {
-	size_t i;
+	const char *p;
 
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
+	p = s;
+	while (*p)
+		p++;
+	return (p - s);
 }
